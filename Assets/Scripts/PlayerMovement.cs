@@ -26,13 +26,25 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Mouse.current.leftButton.wasPressedThisFrame)
         {
-            target = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
-            target.z = transform.position.z;
+            Vector3 mousePos = Mouse.current.position.ReadValue();
+
+            mousePos.z = Mathf.Abs(Camera.main.transform.position.z);
+
+            Vector3 worldPos = Camera.main.ScreenToWorldPoint(mousePos);
+
+            target = new Vector3(
+                worldPos.x,
+                worldPos.y,
+                transform.position.z
+            );
         }
 
-        transform.position = Vector3.MoveTowards(transform.position, target, speed * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(
+            transform.position,
+            target,
+            speed * Time.deltaTime
+        );
     }
-
     private void UpdateAnimation()
     {
 
