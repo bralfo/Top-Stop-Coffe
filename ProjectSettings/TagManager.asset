@@ -44,6 +44,9 @@ TagManager:
   - name: Background
     uniqueID: 3067522215
     locked: 0
+  - name: Background Decoration
+    uniqueID: 1792251163
+    locked: 0
   - name: Wall
     uniqueID: 1218295495
     locked: 0
@@ -53,8 +56,14 @@ TagManager:
   - name: Ground
     uniqueID: 4142470323
     locked: 0
+  - name: Back
+    uniqueID: 3037907123
+    locked: 0
   - name: Player
     uniqueID: 2190942371
+    locked: 0
+  - name: Front
+    uniqueID: 3125038431
     locked: 0
   m_RenderingLayers:
   - Default
