@@ -65,5 +65,11 @@ TagManager:
   - name: Front
     uniqueID: 3125038431
     locked: 0
+  - name: Highligth
+    uniqueID: 4117318681
+    locked: 0
+  - name: Highligth plus
+    uniqueID: 1612929779
+    locked: 0
   m_RenderingLayers:
   - Default
