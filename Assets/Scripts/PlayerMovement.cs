@@ -54,13 +54,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void MovePlayer()
     {
-        Vector2 newPosition = Vector2.MoveTowards(
-            rb.position,
-            target,
-            speed * Time.fixedDeltaTime
-        );
-
-        rb.MovePosition(newPosition);
+        Vector2 newPosition = Vector2.MoveTowards
+            (rb.position,target,speed * Time.fixedDeltaTime); rb.MovePosition(newPosition);
     }
 
     private void UpdateAnimation()
